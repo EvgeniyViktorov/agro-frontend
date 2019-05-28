@@ -1,0 +1,9 @@
+@import './../../constants/sizes';
+@import './../../constants/colors';
+
+.back-button {
+  width: 67px; // TODO: FIX THIS!
+  > .icon {
+    margin-left: -7px;
+  }
+}

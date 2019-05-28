@@ -1,0 +1,20 @@
+@import './../../constants/colors';
+
+.input-text {
+  flex: 1 1 auto;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  min-height: 40px;
+  width: 100%;
+  background: $color-white;
+  // TODO: disabled
+}
+
+.-night {
+  color: $color-white;
+  background: $color-grey;
+}

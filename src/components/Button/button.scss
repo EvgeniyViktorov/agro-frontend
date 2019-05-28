@@ -1,0 +1,169 @@
+@import './../../constants/sizes';
+@import './../../constants/colors';
+
+.button {
+  background: $color-button-bg-positive;
+  //background: linear-gradient(to bottom, $color-background-gradient-top-button, $color-background-gradient-bottom-button);
+  border-radius: 5px;
+  color: $color-button-text-positive;
+  cursor: pointer;
+  display: inline-flex;
+  //font-family: inherit;
+  line-height: 1;
+  outline: 0 !important;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: 0 none;
+  position: relative;
+
+  &:hover,
+  &:active {
+    background-color: lighten($color-button-bg-positive, 10%);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  > svg {
+    vertical-align: baseline;
+  }
+
+  &.-loading {
+    background-color: lighten($color-button-bg-positive, 10%);
+    cursor: not-allowed;
+    color: $color-grey;
+    .fi-arrows-ccw:before {
+      -webkit-animation: rotating 1s linear infinite;
+    }
+  }
+
+  &.-disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: lighten($color-button-bg-positive, 10%);
+    color: $color-grey;
+  }
+
+  //&.-primary,
+  //&.-secondary {
+  //  &.-disabled {
+  //    cursor: not-allowed;
+  //    pointer-events: none;
+  //  }
+  //  svg {
+  //    fill: $color-text-inverse;
+  //  }
+  //}
+  //
+  //&.-primary {
+  //  background: $color-border-primary-button;
+  //  color: $color-text-inverse;
+  //  &:hover,
+  //  &:active {
+  //    background-color: $color-border-primary-dark-button;
+  //    border-color: $color-border-primary-button;
+  //  }
+  //
+  //  &:active {
+  //    background-color: $color-border-primary-button;
+  //  }
+  //
+  //  &.-disabled {
+  //    background: $color-border-primary-disabled-button;
+  //    color: $color-background-light-gray !important;
+  //    text-shadow: $color-default-blue 0 0 5px;
+  //  }
+  //}
+  //
+  //&.-active {
+  //  background: $color-background-submission-button;
+  //  color: $color-text-submission-bottom;
+  //  &:hover,
+  //  &:active {
+  //    background-color: $color-status-approved;
+  //  }
+  //
+  //  &.-disabled {
+  //    background: $color-background-submission-button-disabled;
+  //    color: $color-background-button;
+  //  }
+  //}
+  //
+  //&.-positive,
+  //&.-negative {
+  //  border-radius: 10px;
+  //  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  //  color: $color-text-positive-bottom;
+  //  font-weight: bold;
+  //  text-transform: uppercase;
+  //  &.-disabled {
+  //    background: $color-disabled;
+  //    color: $color-background-gradient-top-button-disabled;
+  //    text-shadow: none;
+  //  }
+  //}
+  //
+  //&.-positive {
+  //  background: $color-background-positive-button;
+  //  &:hover,
+  //  &:active {
+  //    background-color: darken($color-background-positive-button, 7%);
+  //  }
+  //}
+  //
+  //&.-negative {
+  //  background: $color-background-negative-button;
+  //  &:hover,
+  //  &:active {
+  //    background-color: darken($color-background-negative-button, 7%);
+  //  }
+  //}
+  //
+  //&.-disabled {
+  //  background: linear-gradient(to bottom, $color-background-gradient-bottom-button-disabled, $color-background-gradient-top-button-disabled 1%, $color-background-gradient-top-button-disabled);
+  //  color: $color-text-secondary !important;
+  //  cursor: not-allowed;
+  //  pointer-events: none;
+  //  text-shadow: $color-text-submission-bottom 0 0 6px;
+  //}
+
+  &.-unstyled {
+    background: none;
+    color: $color-button-bg-positive;
+    border-radius: 0;
+    border-bottom: 1px solid $color-button-bg-positive;
+    padding: 0 0 2px 0;
+
+    &:hover,
+    &:active {
+      background: none;
+      box-shadow: none;
+      text-decoration: underline;
+    }
+  }
+}
+
+.-night {
+  .button {
+    background: $color-button-bg-positive-night;
+    color: $color-button-text-positive-night;
+    &:hover,
+    &:active {
+      background-color: lighten($color-button-bg-positive-night, 10%);
+    }
+
+    &.-loading {
+      background-color: lighten($color-button-bg-positive-night, 10%);
+    }
+
+    &.-disabled {
+      background-color: lighten($color-button-bg-positive-night, 10%);
+    }
+
+    &.-unstyled {
+      color: $color-button-bg-positive-night;
+      border-bottom: 1px solid $color-button-bg-positive-night;
+    }
+  }
+}

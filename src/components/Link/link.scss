@@ -1,0 +1,16 @@
+@import './../../constants/colors';
+@import './../../constants/sizes';
+
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid $color-text-dark;
+  padding: 0 0 2px 0;
+  font-size: $size-text;
+}
+
+.-night {
+  border-color: $color-text-night;
+  .link {
+    border-bottom: 1px solid $color-text-night;
+  }
+}

@@ -1,0 +1,15 @@
+export const ROUTES = {
+	SETTINGS: 'settings',
+	FIELDS: 'fields',
+	FIELD: 'fields.field',
+	FORMS: 'forms',
+	FORM: 'forms.form',
+	INFO: 'info',
+	INFO_ARTICLE: 'info.article',
+	LOGIN: 'login',
+	PROFILE: 'profile',
+	USERS: 'users',
+	FORMS_CONSTRUCTOR: 'forms-constructor',
+	STATISTICS_LIST: 'statistics',
+	STATISTICS: 'statistics.field',
+};

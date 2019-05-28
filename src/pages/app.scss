@@ -1,0 +1,11 @@
+#app {
+  .main-holder {
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+  }
+  &.-not-mobile {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}

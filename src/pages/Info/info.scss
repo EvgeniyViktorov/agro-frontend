@@ -1,0 +1,12 @@
+.info-page {
+  .chapter {
+    padding-top: 10px;
+    margin-bottom: 5px;
+    > h3 {
+      text-transform: uppercase;
+    }
+    .article {
+      padding: 3px 0;
+    }
+  }
+}

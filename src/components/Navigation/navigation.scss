@@ -1,0 +1,87 @@
+@import './../../constants/colors';
+
+.navigation {
+  display: flex;
+  background: $color-background-medium;
+  width: 100vw; // 100% view width
+  .icon {
+    margin: 0;
+  }
+  .navigation-tab {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25%;
+    height: 2rem;
+    position: relative;
+    > .icon-holder {
+      display: flex;
+      align-self: center;
+      &:before,
+      &:after { // circles with the same background as active tab
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: $color-background-medium;
+        z-index: 5;
+      }
+      &:before {
+        left: -10px;
+      }
+      &:after {
+        right: -10px;
+      }
+    }
+    &.active {
+      border-radius: 10px 10px 0 0;
+      background: #f4f4f4;
+      z-index: 10;
+      &:before,
+      &:after { //squares with the same background color as inactive tabs
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 5px;
+        height: 5px;
+        background: #f4f4f4;
+      }
+      &:before {
+        left: -5px;
+      }
+      &:after {
+        right: -5px;
+      }
+    }
+
+    &:last-child {
+      &:after,
+      .icon-holder:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.-night {
+  .navigation {
+    background: $color-background-navigation-night;
+    .navigation-tab {
+      > .icon-holder {
+        &:before,
+        &:after { // circles with the same background as active tab
+          background: $color-background-navigation-night;
+        }
+      }
+      &.active {
+        background-color: lighten($color-background-night, 10%);
+        &:before,
+        &:after { //squares with the same background color as inactive tabs
+          background-color: lighten($color-background-night, 10%);
+        }
+      }
+    }
+  }
+}

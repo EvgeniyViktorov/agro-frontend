@@ -1,0 +1,10 @@
+.page-chooser {
+  display: flex;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  flex-direction: column;
+  > aside {
+    display: flex;
+    flex: 0 0 auto;
+  }
+}

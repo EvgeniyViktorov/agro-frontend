@@ -1,0 +1,40 @@
+@import './../../constants/sizes';
+@import './../../constants/colors';
+
+.form-builder,
+.forms-constructor-page {
+  margin-bottom: 30px;
+
+  .form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    > .label {
+      min-width: 170px;
+      line-height: 0.9;
+    }
+    &.-multiline {
+      flex-direction: column;
+      align-items: flex-start;
+      > .label {
+        padding-bottom: 10px;
+      }
+      > .select {
+        width: 100%;
+      }
+      > .textarea {
+        width: 100%;
+        min-height: 100px;
+      }
+    }
+    &.-notes {
+      margin: 30px 0 15px;
+    }
+  }
+}
+
+.-night .form-builder {
+  .input-text, .textarea, .select > div, .select > div > div > div {
+    background: $color-background-navigation-night;
+  }
+}

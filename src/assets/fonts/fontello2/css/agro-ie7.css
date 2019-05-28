@@ -1,0 +1,37 @@
+[class^="fi-"], [class*=" fi-"] {
+  font-family: 'agro';
+  font-style: normal;
+  font-weight: normal;
+ 
+  /* fix buttons height */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+ 
+.fi-edit { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.fi-info-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.fi-left-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.fi-right-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.fi-up-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.fi-down-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
+.fi-arrows-ccw { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;'); }
+.fi-check { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
+.fi-cancel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;'); }
+.fi-block { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe809;&nbsp;'); }
+.fi-users { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;'); }
+.fi-plus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;'); }
+.fi-wrench { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;'); }
+.fi-cancel-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe815;&nbsp;'); }
+.fi-attach { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81a;&nbsp;'); }
+.fi-lock { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81b;&nbsp;'); }
+.fi-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe840;&nbsp;'); }
+.fi-info { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf129;&nbsp;'); }
+.fi-attention-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12a;&nbsp;'); }
+.fi-lock-open-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13e;&nbsp;'); }
+.fi-tumblr-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf174;&nbsp;'); }
+.fi-child { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1ae;&nbsp;'); }
+.fi-sliders { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1de;&nbsp;'); }
+.fi-hand-paper-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf256;&nbsp;'); }
+.fi-map-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf278;&nbsp;'); }

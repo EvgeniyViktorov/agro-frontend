@@ -1,0 +1,191 @@
+@import 'assets/styles/reset.scss';
+@import 'assets/styles/normalize.scss';
+@import 'assets/fonts/fontello/css/agro.css';
+@import 'constants/sizes';
+@import 'constants/colors';
+
+// general styles
+html {
+	font-size: 20px;
+	line-height: 1.5rem;
+	padding: 0;
+}
+
+html,
+body,
+#root,
+#app,
+.page-chooser {
+	height: 100%;
+}
+
+body,
+p,
+ul,
+li,
+body,
+div,
+input,
+textarea,
+select,
+a,
+span,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: 600 !important;
+}
+
+body {
+	.-day {
+		background: $color-background-light;
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		ul,
+		li,
+		body,
+		div,
+		input,
+		textarea,
+		select,
+		a,
+		span {
+			color: $color-text-dark;
+		}
+
+	}
+	.-night {
+		background: $color-background-night;
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		ul,
+		li,
+		body,
+		div,
+		input,
+		textarea,
+		select,
+		a,
+		span {
+			color: $color-text-night;
+		}
+
+	}
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+h2 {
+	margin: 10px 0;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+p,
+label,
+input,
+textarea,
+select,
+div {
+	font-size: $size-text;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+.page {
+	position: relative;
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	padding: 20px;
+}
+
+.input-text:invalid {
+	color: $color-alarm;
+}
+
+.-margin-right {
+	margin-right: 20px;
+}
+
+.heading-holder {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	> h2 {
+		margin-top: 25px;
+	}
+	> .back-button {
+		padding-top: 5px;
+	}
+}
+
+.textarea {
+	box-sizing: border-box;
+}
+
+
+@-webkit-keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+/*@media (min-width: 1025px) {*/
+/*.mail-client > aside {*/
+/*height: auto;*/
+/*top: 0;*/
+/*width: 150px;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*border-bottom: none;*/
+/*border-right: 1px solid #ccc;*/
+/*}*/
+
+.checkbox {
+	width: 30px;
+	height: 30px;
+}
+
+// VENDOR
+.select {
+	flex: 1 1 auto;
+	font-size: $size-text;
+	> div,
+	> div > div {
+		border-color: transparent;
+	}
+}

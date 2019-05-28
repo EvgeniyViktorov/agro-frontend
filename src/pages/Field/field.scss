@@ -1,0 +1,19 @@
+.field {
+  .field-map > iframe {
+    width: 100%;
+    min-height: 400px;
+  }
+  .field-description .label {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .heading-holder {
+    > h2 {
+      margin-bottom: 0;
+    }
+    > .description {
+      font-size: 18px;
+    }
+  }
+}

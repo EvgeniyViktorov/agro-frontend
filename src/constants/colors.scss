@@ -1,0 +1,22 @@
+// DAY mode
+$color-background-light: #ebebeb;
+$color-background-medium: #cccccc;
+$color-text-dark: #474747;
+$color-text-secondary: #666666;
+
+$color-button-bg-positive: #474747;
+$color-button-text-positive: #ebebeb;
+
+$color-alarm: #FF6347;
+$color-success: #00a651;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #999999;
+
+// NIGHT mode
+$color-background-night: $color-text-dark;
+$color-background-navigation-night: #333333;
+$color-text-night: #dddddd;
+
+$color-button-bg-positive-night: $color-button-text-positive;
+$color-button-text-positive-night: $color-button-bg-positive;

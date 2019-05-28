@@ -1,0 +1,27 @@
+@import './../../constants/colors';
+
+.forms-constructor-page {
+  .mandatory {
+    > .label {
+      padding-right: 10px;
+    }
+  }
+}
+
+.popup {
+  position: relative;
+  box-shadow: 0 0 25px $color-text-dark;
+  padding: 20px;
+  > .fi-cancel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.-night .popup {
+  box-shadow: 0 0 25px $color-white;
+}
